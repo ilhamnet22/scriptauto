@@ -96,7 +96,7 @@ wget http://188.166.244.117:85/ccs/exp.sh
 cp /root/exp.sh /usr/bin/5
 chmod +x /usr/bin/5
 # menu
-wget http://188.166.244.117:85/ccs/menu.sh
+wget https://raw.githubusercontent.com/ilhamnet22/scriptauto/master/menu.sh
 cp /root/menu.sh /usr/bin/menu
 chmod +x /usr/bin/menu
 # speedtest
@@ -203,9 +203,9 @@ iptables -A OUTPUT -d auth.api.sonyentertainmentnetwork.com -j DROP
 iptables -A OUTPUT -d auth.api.np.ac.playstation.net -j DROP
 # kill 
 cd /usr/bin/
-wget https://raw.githubusercontent.com/galihrezah/kill/master/killmultilogindropbear –no-check-certificate -O kill
+wget https://raw.githubusercontent.com/galihrezah/kill/master/killmultilogindropbear â€“no-check-certificate -O kill
 chmod +x /usr/bin/kill
-echo “* * * * * root /usr/bin/kill” >> /etc/crontab
+echo â€œ* * * * * root /usr/bin/killâ€ >> /etc/crontab
 cd /
 echo "0 * * * * root /usr/bin/reboot" > /etc/cron.d/reboot
 wget http://www.inetbase.com/ccripts/ccos/install.sh
