@@ -1,0 +1,2 @@
+# scriptauto
+autoinstalscript
