@@ -46,8 +46,10 @@ echo "Jika Ingin Request Scirpt Fitur lain silahkan :) - harnet new";
 echo "----------------------";
 echo -e $red "Thanks For Purchase :) ";
 echo -e $red "Regards Admin Harnet ";
+echo -e $red "Regards Seller IlhamNet ";
 
 echo -e $red "#Haris Priambodo = Facebook";
+echo -e $red "#Ilham Muhammad  = Facebook";
 
 echo "--------------- Fitur Lain - IP: $myip ---------------"
 echo "--------------- Ketikan Sesuai Angka ---------------"
