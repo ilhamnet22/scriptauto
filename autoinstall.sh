@@ -152,7 +152,7 @@ chmod +x /usr/bin/22
 wget https://raw.githubusercontent.com/ilhamnet22/scriptauto/master/drop.sh
 cp /root/drop.sh /usr/bin/21
 chmod +x /usr/bin/21
-wget https://github.com/ilhamnet22/scriptauto/blob/master/reboot.sh
+wget https://raw.githubusercontent.com/ilhamnet22/scriptauto/master/reboot.sh
 cp /root/reboot.sh /usr/bin/25
 chmod +x /usr/bin/25
 # squid3
