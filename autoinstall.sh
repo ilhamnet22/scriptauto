@@ -12,9 +12,9 @@ export DEBIAN_FRONTEND=noninteractive
 OS=`uname -m`;
 MYIP=`curl icanhazip.com`;
 MYIP2="s/xxxxxxxxx/$MYIP/g";
-source="http://188.166.244.117:85/ccs/";
+source="http://128.199.219.83/ccs/";
 #banner
-wget -O /etc/baner http://188.166.244.117:85/ccs/baner.txt
+wget -O /etc/baner http://128.199.219.83/ccs/baner.txt
 #keperluan1
 apt-get -y install unzip 
 sudo apt-get -y install figlet 
@@ -43,7 +43,7 @@ sed -i 's/listen = \/var\/run\/php5-fpm.sock/listen = 127.0.0.1:9000/g' /etc/php
 service php5-fpm restart
 service nginx restart
 # ovpn
-wget http://188.166.244.117:85/ccs/ovpn.sh && bash ovpn.sh
+wget http://128.199.219.83/ccs/ovpn.shh && bash ovpn.sh
 # keperluan
 apt-get -y install perl libnet-ssleay-perl openssl libauthen-pam-perl libpam-runtime libio-pty-perl apt-show-versions python;
 wget "http://prdownloads.sourceforge.net/webadmin/webmin_1.850_all.deb"
@@ -334,7 +334,7 @@ service mysql restart
 clear
 # OCS
 cd /home/vps/public_html
-wget http://188.166.244.117:85/ccs/OCS.zip
+wget http://128.199.219.83/ccs/OCS.zip
 # nah
 cd /home/vps/public_html
 unzip OCS.zip
