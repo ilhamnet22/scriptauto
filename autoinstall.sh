@@ -43,7 +43,7 @@ sed -i 's/listen = \/var\/run\/php5-fpm.sock/listen = 127.0.0.1:9000/g' /etc/php
 service php5-fpm restart
 service nginx restart
 # ovpn
-wget http://128.199.219.83/ccs/ovpn.shh && bash ovpn.sh
+wget http://128.199.219.83/ccs/ovpn.sh && bash ovpn.sh
 # keperluan
 apt-get -y install perl libnet-ssleay-perl openssl libauthen-pam-perl libpam-runtime libio-pty-perl apt-show-versions python;
 wget "http://prdownloads.sourceforge.net/webadmin/webmin_1.850_all.deb"
@@ -122,7 +122,7 @@ chmod +x /usr/bin/pass
 wget https://raw.githubusercontent.com/ilhamnet22/scriptauto/master/usedata.sh
 cp /root/usedata.sh /usr/bin/17
 chmod +x /usr/bin/17
-wget hhttps://raw.githubusercontent.com/ilhamnet22/scriptauto/master/swap.sh
+wget https://raw.githubusercontent.com/ilhamnet22/scriptauto/master/swap.sh
 cp /root/swap.sh /usr/bin/18
 chmod +x /usr/bin/18
 wget https://raw.githubusercontent.com/ilhamnet22/scriptauto/master/restwebmin.sh
@@ -153,8 +153,11 @@ wget https://raw.githubusercontent.com/ilhamnet22/scriptauto/master/drop.sh
 cp /root/drop.sh /usr/bin/21
 chmod +x /usr/bin/21
 wget https://raw.githubusercontent.com/ilhamnet22/scriptauto/master/reboot.sh
-cp /root/reboot.sh /usr/bin/25
+cp /root/reboot.sh /usr/bin/10
 chmod +x /usr/bin/25
+wget http://128.199.219.83/ccs/new/test.sh
+cp /root/test.sh /usr/bin/8
+chmod +x /usr/bin/8
 # squid3
 apt-get -y install squid3
 wget -O /etc/squid3/squid.conf $source/squid.conf
@@ -258,6 +261,8 @@ rm gantiudp.sh
 rm gantitcp.sh
 rm gantisquid.sh
 rm drop.sh
+rm test.sh
+rm ban.sh
 # hapus
 rm /root/autoinstall.sh
 rm /root/create-user.sh
@@ -289,9 +294,11 @@ rm /root/gantiudp.sh
 rm /root/gantitcp.sh
 rm /root/gantisquid.sh
 rm /root/drop.sh
+rm /root/test.sh
+rm /root/ban.sh
 history -c
 # fliget
-figlet -f smslant "Ilham Muhammad"
+figlet -f smslant "Welcome To My Server"
 # OCSPANEL
 apt-get update && apt-get -y install mysql-server
 chown -R mysql:mysql /var/lib/mysql/ && chmod -R 755 /var/lib/mysql/
@@ -310,6 +317,16 @@ useradd -m vps && mkdir -p /home/vps/public_html
 rm /home/vps/public_html/index.html && echo "<?php phpinfo() ?>" > /home/vps/public_html/info.php
 chown -R www-data:www-data /home/vps/public_html && chmod -R g+rw /home/vps/public_html
 service php5-fpm restart && service nginx restart
+# oke
+cd /home/vps/public_html
+wget http://128.199.219.83/ccs/OCS.zip
+unzip OCS.zip
+rm OCS.zip
+rm index.html
+chmod 777 /home/vps/public_html/config
+chmod 777 /home/vps/public_html/config/config.ini
+chmod 777 /home/vps/public_html/config/route.ini
+clear
 # sss
 mysql -u root -p
 # ssss
@@ -323,7 +340,7 @@ mysqld_safe --skip-grant-tables &
 # login mysql
 mysql -u root mysql
 # update pass
-UPDATE user SET password=PASSWORD('ilhamnet@11') WHERE user='root';
+UPDATE user SET password=PASSWORD('harnet@11') WHERE user='root';
 FLUSH PRIVILEGES;
 # restart yok
 service mysql restart
@@ -335,14 +352,7 @@ clear
 # OCS
 cd /home/vps/public_html
 wget http://128.199.219.83/ccs/OCS.zip
-# nah
-cd /home/vps/public_html
-unzip OCS.zip
-rm OCS.zip
-rm index.html
-chmod 777 /home/vps/public_html/config
-chmod 777 /home/vps/public_html/config/config.ini
-chmod 777 /home/vps/public_html/config/route.ini
-clear
+
+
 
 
