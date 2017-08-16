@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Login VPS SSH Harnet 443
+# Login VPS SSH iLHAM 443
 # ========================
 #
 data=( `ps aux | grep -i dropbear | awk '{print $2}'`);
@@ -17,4 +17,4 @@ echo "$PID - $USER - $IP";
 fi
 done
 echo "---";
-echo "ILHAMNET Server";
+echo "ILHAM Server";
