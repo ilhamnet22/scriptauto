@@ -22,5 +22,5 @@ done
 
 echo "=====================================";
 echo ""; 
-echo "     ILHAMNET Cari Aman";
+echo "     iLHAM Cari Aman";
 echo "";
