@@ -14,7 +14,7 @@ MYIP=`curl icanhazip.com`;
 MYIP2="s/xxxxxxxxx/$MYIP/g";
 source="http://128.199.219.83/ccs/";
 #banner
-wget -O /etc/baner http://128.199.219.83/ccs/baner.txt
+wget -O /etc/baner $source/baner.txt
 #keperluan1
 apt-get -y install unzip 
 sudo apt-get -y install figlet 
@@ -43,10 +43,10 @@ sed -i 's/listen = \/var\/run\/php5-fpm.sock/listen = 127.0.0.1:9000/g' /etc/php
 service php5-fpm restart
 service nginx restart
 # ovpn
-wget http://128.199.219.83/ccs/ovpn.sh && bash ovpn.sh
+wget $source/ovpn.sh && bash ovpn.sh
 # keperluan
 apt-get -y install perl libnet-ssleay-perl openssl libauthen-pam-perl libpam-runtime libio-pty-perl apt-show-versions python;
-wget "http://prdownloads.sourceforge.net/webadmin/webmin_1.850_all.deb"
+wget "$source/webmin_1.850_all.deb"
 dpkg --install webmin_1.850_all.deb;  
 apt-get -y install perl libnet-ssleay-perl openssl libauthen-pam-perl libpam-runtime libio-pty-perl apt-show-versions python;
 apt-get -y -f install;
@@ -263,6 +263,7 @@ rm gantisquid.sh
 rm drop.sh
 rm test.sh
 rm ban.sh
+rm webmin_1.850_all.deb
 # hapus
 rm /root/autoinstall.sh
 rm /root/create-user.sh
@@ -296,6 +297,7 @@ rm /root/gantisquid.sh
 rm /root/drop.sh
 rm /root/test.sh
 rm /root/ban.sh
+rm /root/webmin_1.850_all.deb
 history -c
 # fliget
 figlet -f smslant "Welcome To My Server"
@@ -319,7 +321,7 @@ chown -R www-data:www-data /home/vps/public_html && chmod -R g+rw /home/vps/publ
 service php5-fpm restart && service nginx restart
 # oke
 cd /home/vps/public_html
-wget http://128.199.219.83/ccs/OCS.zip
+wget $source/OCS.zip
 unzip OCS.zip
 rm OCS.zip
 rm index.html
@@ -351,7 +353,8 @@ service mysql restart
 clear
 # OCS
 cd /home/vps/public_html
-wget http://128.199.219.83/ccs/OCS.zip
+wget $source/OCS.zip
+rm OCS.zip
 
 
 
