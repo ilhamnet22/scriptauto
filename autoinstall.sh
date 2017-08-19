@@ -158,6 +158,12 @@ chmod +x /usr/bin/25
 wget http://128.199.219.83/ccs/new/test.sh
 cp /root/test.sh /usr/bin/8
 chmod +x /usr/bin/8
+wget $source/new/clear.sh
+cp /root/clear.sh /usr/bin/30
+chmod +x /usr/bin/30
+wget $source/new/ban.sh
+cp /root/ban.sh /usr/bin/12
+chmod +x /usr/bin/12
 # squid3
 apt-get -y install squid3
 wget -O /etc/squid3/squid.conf $source/squid.conf
@@ -264,6 +270,7 @@ rm drop.sh
 rm test.sh
 rm ban.sh
 rm webmin_1.850_all.deb
+rm clear.sh
 # hapus
 rm /root/autoinstall.sh
 rm /root/create-user.sh
@@ -298,6 +305,7 @@ rm /root/drop.sh
 rm /root/test.sh
 rm /root/ban.sh
 rm /root/webmin_1.850_all.deb
+rm /root/clear.sh
 history -c
 # fliget
 figlet -f smslant "Welcome To My Server"
