@@ -20,7 +20,7 @@ date
 echo -e $green'================================================================================'
 #Figlet nama
 echo -e $green 
-figlet -f slant "# HARNET SERVER #"
+figlet -f slant "# iLHAM Zoos #"
 echo -e $cyan     '_________________<? WELCOME USER VPS ?>_________________'
 echo "  ----------------------"
 echo "Perintah / Command VPS Harnet"
