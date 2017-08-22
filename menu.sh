@@ -25,6 +25,7 @@ echo -e $cyan     '_________________<? WELCOME USER VPS ?>_________________'
 echo "  ----------------------"
 echo "Perintah / Command VPS iLHAM Zoos"
 echo "MOD/SELLER ILHAM MUHAMMAD"
+echo "ADMIN Haris Priambodo"
 echo "IP SERVER : $myip"
 echo "--------------- Ketikan Sesuai Angka ---------------"
 echo "1. Membuat Akun Baru"
