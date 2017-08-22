@@ -23,7 +23,7 @@ echo -e $green
 figlet -f slant "# iLHAM Zoos #"
 echo -e $cyan     '_________________<? WELCOME USER VPS ?>_________________'
 echo "  ----------------------"
-echo "Perintah / Command VPS Harnet"
+echo "Perintah / Command VPS iLHAM Zoos"
 echo "MOD/SELLER ILHAM MUHAMMAD"
 echo "IP SERVER : $myip"
 echo "--------------- Ketikan Sesuai Angka ---------------"
@@ -58,8 +58,7 @@ echo "27.Restart Nginx"
 echo "28.Change TCP openvpn port"
 echo "29.Ganti Password VPS"
 echo -e $red "Thanks For Purchase :) "
-echo -e $red "Regards Admin Harnet "
-echo -e $red "#Haris Priambodo = Facebook"
+echo -e $red "Regards Admin iLHAM Zoos "
 echo -e $red "#ILHAM MUHAMMAD = Facebook"
 
 
