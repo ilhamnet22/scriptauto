@@ -1,10 +1,13 @@
 #!/bin/bash
 myip=`ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0' | head -n1`
+cc=`curl ifconfig.co/country`
+kota=`curl ifconfig.co/city`
 #
 #
 # ========================
 
 # Modifikasi Terminal
+
 
 blue='\e[134m'
 green='\e[023m'
@@ -22,11 +25,13 @@ echo -e $green'=================================================================
 echo -e $green 
 figlet -f slant "# iLHAM Zoos #"
 echo -e $cyan     '_________________<? WELCOME USER VPS ?>_________________'
+
 echo "  ----------------------"
+echo "ADMIN VPS Harnet"
 echo "Perintah / Command VPS iLHAM Zoos"
-echo "MOD/SELLER ILHAM MUHAMMAD"
-echo "ADMIN Haris Priambodo"
 echo "IP SERVER : $myip"
+echo "Country : $cc"
+echo "City : $kota"
 echo "--------------- Ketikan Sesuai Angka ---------------"
 echo "1. Membuat Akun Baru"
 echo "2. Memantau Yang Login"
@@ -58,9 +63,13 @@ echo "26.Restart Squid"
 echo "27.Restart Nginx"
 echo "28.Change TCP openvpn port"
 echo "29.Ganti Password VPS"
+echo "30.Clear VPS"
 echo -e $red "Thanks For Purchase :) "
-echo -e $red "Regards Admin iLHAM Zoos "
-echo -e $red "#ILHAM MUHAMMAD = Facebook"
+echo -e $red "Regards Admin Harnet "
+echo -e $red "Regards Seller iLHAM Zoos "
+echo -e $red "#Haris Priambodo = Facebook"
+echo -e $red "#Ilham Muhammad = Facebook"
+
 
 
 
