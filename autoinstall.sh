@@ -26,6 +26,7 @@ apt-get -y upgrade
 apt-get -y install nano  
 apt-get -y install vim
 apt-get -y install wondershaper
+apt-get -y install curl
 sudo apt-get -y install fail2ban
 apt-get -y -f install libxml-parser-perl
 # install webserver
@@ -76,23 +77,23 @@ wondershaper eth0 1024 1024
 /etc/init.d/webmin restart
 # wget
 # create
-wget https://raw.githubusercontent.com/ilhamnet22/script/master/create-user.sh
+wget https://raw.githubusercontent.com/ilhamnet22/scriptauto/master/create-user.sh
 cp /root/create-user.sh /usr/bin/1
 chmod +x /usr/bin/1
 # mantau
-wget https://raw.githubusercontent.com/ilhamnet22/script/master/mantau.sh
+wget https://raw.githubusercontent.com/ilhamnet22/scriptauto/master/mantau.sh
 cp /root/mantau.sh /usr/bin/2
 chmod +x /usr/bin/2
 # list
-wget https://raw.githubusercontent.com/ilhamnet22/scriptauto/master/list.sh
+wget $source/list.sh
 cp /root/list.sh /usr/bin/3
 chmod +x /usr/bin/3
 # trial
-wget https://raw.githubusercontent.com/ilhamnet22/scriptauto/master/trial.sh
+wget $source/trial.sh
 cp /root/trial.sh /usr/bin/4
 chmod +x /usr/bin/4
 # exp
-wget https://raw.githubusercontent.com/ilhamnet22/scriptauto/master/exp.sh
+wget $source/exp.sh
 cp /root/exp.sh /usr/bin/5
 chmod +x /usr/bin/5
 # menu
@@ -100,62 +101,62 @@ wget https://raw.githubusercontent.com/ilhamnet22/scriptauto/master/menu.sh
 cp /root/menu.sh /usr/bin/menu
 chmod +x /usr/bin/menu
 # speedtest
-wget https://raw.githubusercontent.com/ilhamnet22/scriptauto/master/speedtest.py
+wget $source/speedtest.py
 chmod +x speedtest.py
 # tendang
-wget https://raw.githubusercontent.com/ilhamnet22/scriptauto/master/tendang.sh
+wget $source/tendang.sh
 cp /root/tendang.sh /usr/bin/6
 chmod +x /usr/bin/6
 # renew
-wget https://raw.githubusercontent.com/ilhamnet22/scriptauto/master/renew.sh
+wget $source/renew.sh
 cp /root/renew.sh /usr/bin/11
 chmod +x /usr/bin/11
 # info
-wget https://raw.githubusercontent.com/ilhamnet22/scriptauto/master/info.sh
+wget $source/info.sh
 cp /root/info.sh /usr/bin/7
 chmod +x /usr/bin/7
 # pass
-wget https://raw.githubusercontent.com/ilhamnet22/scriptauto/master/pass.sh
+wget $source/pass.sh
 cp /root/pass.sh /usr/bin/pass
 chmod +x /usr/bin/pass
 # other fiture
-wget https://raw.githubusercontent.com/ilhamnet22/scriptauto/master/usedata.sh
+wget $source/new/usedata.sh
 cp /root/usedata.sh /usr/bin/17
 chmod +x /usr/bin/17
-wget https://raw.githubusercontent.com/ilhamnet22/scriptauto/master/swap.sh
+wget $source/new/swap.sh
 cp /root/swap.sh /usr/bin/18
 chmod +x /usr/bin/18
-wget https://raw.githubusercontent.com/ilhamnet22/scriptauto/master/restwebmin.sh
+wget $source/new/restwebmin.sh
 cp /root/restwebmin.sh /usr/bin/25
 chmod +x /usr/bin/25
-wget https://raw.githubusercontent.com/ilhamnet22/scriptauto/master/restsquid.sh
-cp /root/restsquid.sh /usr/bin/22
-chmod +x /usr/bin/22
-wget https://raw.githubusercontent.com/ilhamnet22/scriptauto/master/restov.sh
+wget $source/new/restsquid.sh
+cp /root/restsquid.sh /usr/bin/26
+chmod +x /usr/bin/26
+wget $source/new/restov.sh
 cp /root/restov.sh /usr/bin/24
 chmod +x /usr/bin/24
-wget https://raw.githubusercontent.com/ilhamnet22/scriptauto/master/passwd.sh
+wget $source/new/passwd.sh
 cp /root/passwd.sh /usr/bin/29
 chmod +x /usr/bin/29
-wget https://raw.githubusercontent.com/ilhamnet22/scriptauto/master/mon.sh
+wget $source/new/mon.sh
 cp /root/mon.sh /usr/bin/19
 chmod +x /usr/bin/19
-wget https://raw.githubusercontent.com/ilhamnet22/scriptauto/master/gantiudp.sh
+wget $source/new/gantiudp.sh
 cp /root/gantiudp.sh /usr/bin/20
 chmod +x /usr/bin/20
-wget https://raw.githubusercontent.com/ilhamnet22/scriptauto/master/gantitcp.sh
+wget $source/new/gantitcp.sh
 cp /root/gantitcp.sh /usr/bin/28
 chmod +x /usr/bin/28
-wget https://raw.githubusercontent.com/ilhamnet22/scriptauto/master/gantisquid.sh
+wget $source/new/gantisquid.sh
 cp /root/gantisquid.sh /usr/bin/22
 chmod +x /usr/bin/22
-wget https://raw.githubusercontent.com/ilhamnet22/scriptauto/master/drop.sh
+wget $source/new/drop.sh
 cp /root/drop.sh /usr/bin/21
 chmod +x /usr/bin/21
-wget https://raw.githubusercontent.com/ilhamnet22/scriptauto/master/reboot.sh
+wget $source/new/reboot.sh
 cp /root/reboot.sh /usr/bin/10
 chmod +x /usr/bin/25
-wget http://128.199.219.83/ccs/new/test.sh
+wget $source/new/test.sh
 cp /root/test.sh /usr/bin/8
 chmod +x /usr/bin/8
 wget $source/new/clear.sh
@@ -164,6 +165,12 @@ chmod +x /usr/bin/30
 wget $source/new/ban.sh
 cp /root/ban.sh /usr/bin/12
 chmod +x /usr/bin/12
+wget $source/new/restnginx.sh
+cp /root/restnginx.sh /usr/bin/27
+chmod +x /usr/bin/27
+wget $source/new/restdrop.sh
+cp /root/restdrop.sh /usr/bin/23
+chmod +x /usr/bin/23
 # squid3
 apt-get -y install squid3
 wget -O /etc/squid3/squid.conf $source/squid.conf
@@ -244,7 +251,6 @@ rm list.sh
 rm trial.sh
 rm exp.sh
 rm menu.sh
-rm speedtest.py
 rm tendang.sh
 rm renew.sh
 rm info.sh
@@ -253,8 +259,6 @@ rm root/testspeed.py
 rm baner.txt
 rm pass.sh
 rm ovpn.sh
-rm speedtest.py.1
-rm speedtest.py
 rm menu2.sh
 rm usedata.sh
 rm swap.sh
@@ -271,7 +275,11 @@ rm test.sh
 rm ban.sh
 rm webmin_1.850_all.deb
 rm clear.sh
+rm restnginx.sh
+rm restdrop.sh
 # hapus
+rm /root/restnginx.sh
+rm /root/restdrop.sh
 rm /root/autoinstall.sh
 rm /root/create-user.sh
 rm /root/mantau.sh
@@ -279,17 +287,13 @@ rm /root/list.sh
 rm /root/trial.sh
 rm /root/exp.sh
 rm /root/menu.sh
-rm /root/speedtest.py
 rm /root/tendang.sh
 rm /root/renew.sh
 rm /root/info.sh
 rm /root/webmin_1.850_all.deb
-rm /root/testspeed.py
 rm /root/baner.txt
 rm /root/pass.sh
 rm /root/ovpn.sh
-rm /root/speedtest.py.1
-rm /root/speedtest.py
 rm /root/menu2.sh
 rm /root/usedata.sh
 rm /root/swap.sh
@@ -350,7 +354,7 @@ mysqld_safe --skip-grant-tables &
 # login mysql
 mysql -u root mysql
 # update pass
-UPDATE user SET password=PASSWORD('harnet@11') WHERE user='root';
+UPDATE user SET password=PASSWORD('ilhamzoos') WHERE user='root';
 FLUSH PRIVILEGES;
 # restart yok
 service mysql restart
