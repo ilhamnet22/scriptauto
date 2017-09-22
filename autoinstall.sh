@@ -12,7 +12,6 @@ export DEBIAN_FRONTEND=noninteractive
 OS=`uname -m`;
 MYIP=`curl icanhazip.com`;
 MYIP2="s/xxxxxxxxx/$MYIP/g";
-source="http://128.199.219.83/ccs/";
 #banner
 wget -O /etc/baner $source/baner.txt
 #keperluan1
@@ -85,15 +84,15 @@ wget https://raw.githubusercontent.com/ilhamnet22/scriptauto/master/mantau.sh
 cp /root/mantau.sh /usr/bin/2
 chmod +x /usr/bin/2
 # list
-wget $source/list.sh
+wget https://raw.githubusercontent.com/ilhamnet22/scriptauto/master/list.sh
 cp /root/list.sh /usr/bin/3
 chmod +x /usr/bin/3
 # trial
-wget $source/trial.sh
+wget https://raw.githubusercontent.com/ilhamnet22/scriptauto/master/trial.sh
 cp /root/trial.sh /usr/bin/4
 chmod +x /usr/bin/4
 # exp
-wget $source/exp.sh
+wget https://raw.githubusercontent.com/ilhamnet22/scriptauto/master/exp.sh
 cp /root/exp.sh /usr/bin/5
 chmod +x /usr/bin/5
 # menu
@@ -101,59 +100,59 @@ wget https://raw.githubusercontent.com/ilhamnet22/scriptauto/master/menu.sh
 cp /root/menu.sh /usr/bin/menu
 chmod +x /usr/bin/menu
 # speedtest
-wget $source/speedtest.py
+wget https://raw.githubusercontent.com/ilhamnet22/scriptauto/master/speedtest.py
 chmod +x speedtest.py
 # tendang
-wget $source/tendang.sh
+wget https://raw.githubusercontent.com/ilhamnet22/scriptauto/master/tendang.sh
 cp /root/tendang.sh /usr/bin/6
 chmod +x /usr/bin/6
 # renew
-wget $source/renew.sh
+wget https://raw.githubusercontent.com/ilhamnet22/scriptauto/master/renew.sh
 cp /root/renew.sh /usr/bin/11
 chmod +x /usr/bin/11
 # info
-wget $source/info.sh
+wget https://raw.githubusercontent.com/ilhamnet22/scriptauto/master/info.sh
 cp /root/info.sh /usr/bin/7
 chmod +x /usr/bin/7
 # pass
-wget $source/pass.sh
+wget https://raw.githubusercontent.com/ilhamnet22/scriptauto/master/pass.sh
 cp /root/pass.sh /usr/bin/pass
 chmod +x /usr/bin/pass
 # other fiture
-wget $source/new/usedata.sh
+wget https://raw.githubusercontent.com/ilhamnet22/scriptauto/master/usedata.sh
 cp /root/usedata.sh /usr/bin/17
 chmod +x /usr/bin/17
-wget $source/new/swap.sh
+wget https://raw.githubusercontent.com/ilhamnet22/scriptauto/master/swap.sh
 cp /root/swap.sh /usr/bin/18
 chmod +x /usr/bin/18
-wget $source/new/restwebmin.sh
+wget https://raw.githubusercontent.com/ilhamnet22/scriptauto/master/restwebmin.sh
 cp /root/restwebmin.sh /usr/bin/25
 chmod +x /usr/bin/25
-wget $source/new/restsquid.sh
+wget https://raw.githubusercontent.com/ilhamnet22/scriptauto/master/restsquid.sh
 cp /root/restsquid.sh /usr/bin/26
 chmod +x /usr/bin/26
-wget $source/new/restov.sh
+wget https://raw.githubusercontent.com/ilhamnet22/scriptauto/master/restov.sh
 cp /root/restov.sh /usr/bin/24
 chmod +x /usr/bin/24
-wget $source/new/passwd.sh
+wget https://raw.githubusercontent.com/ilhamnet22/scriptauto/master/passwd.sh
 cp /root/passwd.sh /usr/bin/29
 chmod +x /usr/bin/29
-wget $source/new/mon.sh
+wget https://raw.githubusercontent.com/ilhamnet22/scriptauto/master/mon.sh
 cp /root/mon.sh /usr/bin/19
 chmod +x /usr/bin/19
-wget $source/new/gantiudp.sh
+wget https://raw.githubusercontent.com/ilhamnet22/scriptauto/master/gantiudp.sh
 cp /root/gantiudp.sh /usr/bin/20
 chmod +x /usr/bin/20
-wget $source/new/gantitcp.sh
+wget https://raw.githubusercontent.com/ilhamnet22/scriptauto/master/gantitcp.sh
 cp /root/gantitcp.sh /usr/bin/28
 chmod +x /usr/bin/28
-wget $source/new/gantisquid.sh
+wget https://raw.githubusercontent.com/ilhamnet22/scriptauto/master/gantisquid.sh
 cp /root/gantisquid.sh /usr/bin/22
 chmod +x /usr/bin/22
-wget $source/new/drop.sh
+wget https://raw.githubusercontent.com/ilhamnet22/scriptauto/master/drop.sh
 cp /root/drop.sh /usr/bin/21
 chmod +x /usr/bin/21
-wget $source/new/reboot.sh
+wget https://raw.githubusercontent.com/ilhamnet22/scriptauto/master/reboot.sh
 cp /root/reboot.sh /usr/bin/10
 chmod +x /usr/bin/25
 wget $source/new/test.sh
