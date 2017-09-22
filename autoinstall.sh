@@ -13,7 +13,7 @@ OS=`uname -m`;
 MYIP=`curl icanhazip.com`;
 MYIP2="s/xxxxxxxxx/$MYIP/g";
 #banner
-wget -O /etc/baner $source/baner.txt
+wget -O /etc/baner https://raw.githubusercontent.com/ilhamnet22/scriptauto/master/banner.txt
 #keperluan1
 apt-get -y install unzip 
 sudo apt-get -y install figlet 
